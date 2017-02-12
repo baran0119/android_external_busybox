@@ -813,7 +813,7 @@ ifneq ($(KBUILD_SRC),)
 		echo "  in the '$(srctree)' directory.";\
 		/bin/false; \
 	fi;
-	$(Q)if [ ! -d include2 ]; then mkdir -p include2; fi;
+	$(Q)if [ ! -d include2/asm ]; then mkdir -p include2/asm; fi;
 	$(Q)ln -fsn $(srctree)/include/asm-$(ARCH) include2/asm
 endif
 
